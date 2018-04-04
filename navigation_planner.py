@@ -74,7 +74,7 @@ if __name__ == '__main__':
     ENV = load_dict('map.dat')
     # get target position in the scene
     PATH = load_dict('navigation_path.json')
-    print("----Target Object----")
+    print("----Navigation from lobby to living room----")
 
     WPTS = room_to_room_navigation(PATH, "lobby", "living room")
     print(WPTS)
