@@ -24,7 +24,7 @@ def load_dict(loaded_file):
 
 
 def pos_to_room_id(env, pos):
-    """Get the room in which is positioned the robot is located
+    """Get the room in which the robot is located
 
     :param env:
     :param pos:
