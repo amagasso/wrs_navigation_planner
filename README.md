@@ -2,12 +2,12 @@
 This module is designed for navigation planning in virtual and real space.
 This module is composed of functions allowing  to define the waypoints
 to input to the navigation_stack module
-Latest update: 04/04/18
+Latest update: 04/05/18
 Authors: A. Magassouba
 
 Required files:
 
-map.dat
+map.dat that represents in a json file the file map.png
 
 navigation_path.json
 
