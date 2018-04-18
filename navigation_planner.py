@@ -68,6 +68,20 @@ def room_to_room_navigation(way_points_file, source, goal):
             return item["path"]
         if source == item["goal"] and goal == item["source"]:
             return reverse_w_pt(item["path"])
+    return[]
+
+def robot_pose_furniture(fur_pose_file, room_name, fur_name):
+    """From a waypoints return the position to reach a given piece of furniture
+
+    :param fur_pose_file:
+    :param room_name:
+    :param fur_name:
+
+    """
+    for item in fur_pose_file:
+        if room_name == item["room"] and fur_name == item["fur"]:
+            return item["pose"]
+    return {}
 
 
 if __name__ == '__main__':
@@ -75,8 +89,11 @@ if __name__ == '__main__':
     # (unity->)message #json
     ENV = load_dict('map.dat')
     # get target position in the scene
-    PATH = load_dict('navigation_path.json')
+    PATH = load_dict('navigation_path_handyman.json')
     print("----Navigation from lobby to living room----")
 
     WPTS = room_to_room_navigation(PATH, "lobby", "living room")
+    FUR_PTS = load_dict('furniture_to_robot_pose.json')
+    K_TABLE=robot_pose_furniture(FUR_PTS,"kitchen", "table")
     print(WPTS)
+    print(K_TABLE)

@@ -1,0 +1,38 @@
+[
+  {
+    "id" : "entrance",
+    "tl_x" : -2,
+    "tl_y" : -1,
+    "br_x" : 1.5,
+    "br_y" : 2
+    },
+
+    {
+      "id" : "kitchen",
+      "tl_x" : 7,
+      "tl_y" : -1,
+      "br_x" : 11.5,
+      "br_y" : 8
+    },
+    {
+      "id" : "living room",
+      "tl_x" : -2,
+      "tl_y" : 2,
+      "br_x" : 1.5,
+      "br_y" : 11
+    },
+    {
+      "id" : "bed room",
+      "tl_x" : 3,
+      "tl_y" : 2,
+      "br_x" : 7,
+      "br_y" : 8
+    },
+    {
+      "id" : "lobby",
+      "tl_x" : 3,
+      "tl_y" : -1,
+      "br_x" : 7,
+      "br_y" : 2
+    }
+]
