@@ -47,6 +47,8 @@ def reverse_w_pt(w_pt):
     for item in reversed_w_pt:
         if item["theta"] == 0:
             item["theta"] = 3.14
+        elif item["theta"] == 3.14:
+            item["theta"] = 0
         else:
             item["theta"] = -item["theta"]
     return reversed_w_pt
