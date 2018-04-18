@@ -1,0 +1,35 @@
+[
+    {
+      "source" :"kitchen",
+      "goal"   :"bed room",
+      "path":[{"x":18.5,"y":10.60, "theta":-1.57},{"x":18.5,"y":8.80, "theta":-1.57},{"x":13.6,"y":8.80, "theta":3.14},{"x":13.6,"y":3, "theta":0},{"x":15.25,"y":3, "theta":0}]
+    },
+    {
+      "source" :"kitchen",
+      "goal"   :"living room",
+      "path":[{"x":18.5,"y":10.60, "theta":-1.57},{"x":18.5,"y":8.80, "theta":-1.57},{"x":13.6,"y":8.80, "theta":3.14}]
+    },
+    {
+      "source" :"kitchen",
+      "goal"   :"lobby",
+      "path":[{"x":18.5,"y":10.60, "theta":-1.57},{"x":18.5,"y":8.80, "theta":-1.57},{"x":13.6,"y":8.80, "theta":3.14},{"x":13.6,"y":3, "theta":3.14},{"x":12,"y":3, "theta":3.14}]
+    },
+
+    {
+      "source" :"living room",
+      "goal"   :"bed room",
+      "path":[{"x":13.6,"y":8.80, "theta":-1.57},{"x":13.6,"y":3, "theta":0},{"x":15.25,"y":3, "theta":0}]
+    },
+
+    {
+      "source" :"living room",
+      "goal"   :"lobby",
+      "path":[{"x":13.6,"y":8.80, "theta":-1.57},{"x":13.6,"y":3, "theta":3.14},{"x":12,"y":3, "theta":3.14}]
+    },
+
+    {
+      "source" :"bed room",
+      "goal"   :"lobby",
+      "path":[{"x":15.25,"y":3, "theta":3.14},{"x":13.6,"y":3, "theta":3.14},{"x":12,"y":3, "theta":3.14}]
+    }
+]

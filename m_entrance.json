@@ -1,0 +1,9 @@
+[
+  {"kitchen_in":{"x":18.5,"y":10.60}},
+  {"kitchen_out":{"x":18.5,"y":8.80}},
+  {"living_room_in":{"x":13.6,"y":8.80}},
+  {"lobby out":{"x":13.6,"y":3}},
+  {"lobby in":{"x":12,"y":3}},
+  {"bed_room out":{"x":13.6,"y":3}},
+  {"bed_room in":{"x":15.25,"y":3}}
+]
