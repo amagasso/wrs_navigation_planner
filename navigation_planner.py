@@ -10,7 +10,7 @@ Authors: A. Magassouba
 """
 
 import json
-
+from copy import deepcopy
 
 def load_dict(loaded_file):
     """Load a dictionary
@@ -43,7 +43,7 @@ def reverse_w_pt(w_pt):
     :param w_pt:
 
     """
-    reversed_w_pt = list(reversed(w_pt))
+    reversed_w_pt = deepcopy(list(reversed(w_pt)))
     for item in reversed_w_pt:
         if item["theta"] == 0:
             item["theta"] = 3.14
