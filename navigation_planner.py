@@ -79,8 +79,10 @@ def robot_pose_furniture(fur_pose_file, room_name, fur_name):
 
     """
     for item in fur_pose_file:
-        if room_name == item["room"] and fur_name == item["fur"]:
-            return item["pose"]
+        if room_name == item["room"]:
+            for furlist in item["furlist"]:
+                if fur_name == furlist["id"]:
+                    return furlist["pose"]
     return {}
 
 
@@ -94,6 +96,6 @@ if __name__ == '__main__':
 
     WPTS = room_to_room_navigation(PATH, "lobby", "living room")
     FUR_PTS = load_dict('furniture_to_robot_pose.json')
-    K_TABLE=robot_pose_furniture(FUR_PTS,"kitchen", "table")
+    K_TABLE = robot_pose_furniture(FUR_PTS, "kitchen", "table")
     print(WPTS)
     print(K_TABLE)
