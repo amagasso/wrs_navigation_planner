@@ -1,18 +1,18 @@
 [
     {
       "id" : "kitchen",
-      "furlist" : [{"id":"table","pose":{"x":3,"y":10, "theta":0}},{"id":"trashbox","pose":{"x":2,"y":8, "theta":0}}]
+      "furlist" : [{"id":"table","pose":{"x":10,"y":3, "theta":0}},{"id":"trashbox","pose":{"x":2,"y":8, "theta":0}}]
     },
     {
       "id" : "living room",
-      "furlist" : [{"id":"table","pose":{"x":6.7,"y":1, "theta":-1.57}}]
+      "furlist" : [{"id":"table","pose":{"x":1,"y":6.7, "theta":-1.57}}]
     },
     {
       "id" : "bed room",
-      "furlist" : [{"id":"table","pose":{"x":6.5,"y":5.5, "theta":1.57}}]
+      "furlist" : [{"id":"table","pose":{"x":5.5,"y":6.5, "theta":1.57}}]
     },
     {
       "id" : "lobby",
-      "furlist" : [{"id":"table","pose":{"x":0.3,"y":6.5, "theta":-1.57}}]
+      "furlist" : [{"id":"table","pose":{"x":6.5,"y":0.3, "theta":-1.57}}]
     }
 ]
