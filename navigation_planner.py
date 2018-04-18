@@ -70,8 +70,23 @@ def room_to_room_navigation(way_points_file, source, goal):
             return reverse_w_pt(item["path"])
     return[]
 
+def get_room_furniture(fur_pose_file, room_name):
+    """ Return the furniture of a given room
+
+    :param fur_pose_file:
+    :param room_name:
+
+    """
+    furniture = []
+    for item in fur_pose_file:
+        if room_name == item["id"]:
+            for furlist in item["furlist"]:
+                furniture.append(furlist["id"])
+    return furniture
+
+
 def robot_pose_furniture(fur_pose_file, room_name, fur_name):
-    """From a waypoints return the position to reach a given piece of furniture
+    """From the furniture grasping point return the position to reach a given piece of furniture
 
     :param fur_pose_file:
     :param room_name:
@@ -79,7 +94,7 @@ def robot_pose_furniture(fur_pose_file, room_name, fur_name):
 
     """
     for item in fur_pose_file:
-        if room_name == item["room"]:
+        if room_name == item["id"]:
             for furlist in item["furlist"]:
                 if fur_name == furlist["id"]:
                     return furlist["pose"]
@@ -96,6 +111,8 @@ if __name__ == '__main__':
 
     WPTS = room_to_room_navigation(PATH, "lobby", "living room")
     FUR_PTS = load_dict('furniture_to_robot_pose.json')
+    FURLIST = get_room_furniture(FUR_PTS, "kitchen")
+    print(FURLIST)
     K_TABLE = robot_pose_furniture(FUR_PTS, "kitchen", "table")
     print(WPTS)
     print(K_TABLE)

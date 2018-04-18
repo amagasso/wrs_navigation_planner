@@ -1,7 +1,7 @@
 [
     {
-      "room" : "kitchen",
-      "furlist" : [{"id":"table","pose":{"x":3,"y":10, "theta":0}}]
+      "id" : "kitchen",
+      "furlist" : [{"id":"table","pose":{"x":3,"y":10, "theta":0}},{"id":"trashbox","pose":{"x":2,"y":8, "theta":0}}]
     },
     {
       "id" : "living room",
