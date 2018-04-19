@@ -46,13 +46,13 @@
     {
       "source" :"living room",
       "goal"   :"command pose",
-      "path":[{"x":1,"y":7, "theta":0},{"x":2,"y":7, "theta":0},{"x":2.5,"y":7, "theta":0},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":.5, "theta":0},{"x":4.5, "y":0.5 , "theta":1.57}]
+      "path":[{"x":1,"y":7, "theta":0},{"x":2,"y":7, "theta":0},{"x":2.5,"y":7, "theta":0},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":0.5, "theta":0},{"x":4.5, "y":0.5 , "theta":1.57}]
     },
     {
       "source" :"bed room",
       "goal"   :"command pose",
       "path":[{"x":3.5,"y":6, "theta":3.14},{"x":2.5,"y":6, "theta":3.14},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":0.5, "theta":0},{"x":4.5, "y":0.5 , "theta":1.57}]
-    }
+    },
     {
       "source" :"lobby",
       "goal"   :"command pose",

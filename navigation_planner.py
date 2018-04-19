@@ -106,10 +106,10 @@ if __name__ == '__main__':
     # (unity->)message #json
     ENV = load_dict('map.dat')
     # get target position in the scene
-    PATH = load_dict('navigation_path_handyman.json')
+    PATH = load_dict('navigation_path_shokudo.json')
     print("----Navigation from lobby to living room----")
 
-    WPTS = room_to_room_navigation(PATH, "lobby", "living room")
+    WPTS = room_to_room_navigation(PATH, "lobby", "command pose")
     FUR_PTS = load_dict('furniture_to_robot_pose.json')
     FURLIST = get_room_furniture(FUR_PTS, "kitchen")
     print(FURLIST)
