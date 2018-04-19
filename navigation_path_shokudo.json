@@ -7,7 +7,7 @@
     {
       "source" :"kitchen",
       "goal"   :"living room",
-        "path":[{"x":7.5,"y":1.5, "theta":3.14},{"x":6.5,"y":1.5, "theta":3.14},{"x":3.5,"y":0, "theta":3.14},{"x":2.5,"y":0, "theta":3.14},{"x":2,"y":7, "theta":3.14},{"x":1,"y":7, "theta":3.14}]
+        "path":[{"x":7.5,"y":1.5, "theta":3.14},{"x":6.5,"y":1.5, "theta":3.14},{"x":3.5,"y":0.5, "theta":3.14},{"x":2.5,"y":0.5, "theta":3.14},{"x":2,"y":7, "theta":3.14},{"x":1,"y":7, "theta":3.14}]
     },
     {
       "source" :"kitchen",
@@ -24,7 +24,7 @@
     {
       "source" :"living room",
       "goal"   :"lobby",
-      "path":[{"x":1,"y":7, "theta":0},{"x":2,"y":7, "theta":0},{"x":2.5,"y":7, "theta":0},{"x":2.5,"y":0, "theta":0},{"x":3.5,"y":0, "theta":0}]
+      "path":[{"x":1,"y":7, "theta":0},{"x":2,"y":7, "theta":0},{"x":2.5,"y":7, "theta":0},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":0.5, "theta":0}]
     },
 
     {
@@ -35,22 +35,27 @@
 
     {
       "source" :"entrance",
-      "goal"   :"lobby",
-      "path":[{"x":1,"y":0, "theta":0},{"x":2,"y":0, "theta":0},{"x":2.5,"y":0, "theta":0},{"x":3.5,"y":0, "theta":0}]
+      "goal"   :"command pose",
+      "path":[{"x":1,"y":0, "theta":0},{"x":2,"y":0, "theta":0},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":0.5, "theta":0},{"x":4.5, "y":0.5 , "theta":1.57}]
     },
     {
-      "source" :"entrance",
-      "goal"   :"kitchen",
-      "path":[{"x":1,"y":0, "theta":0},{"x":2,"y":0, "theta":0},{"x":2.5,"y":0, "theta":0},{"x":3.5,"y":0, "theta":0},{"x":6.5,"y":1.5, "theta":0},{"x":7.5,"y":1.5, "theta":0}]
+      "source" :"kitchen",
+      "goal"   :"command pose" ,
+      "path":[{"x":7.5,"y":1.5, "theta":3.14},{"x":6.5,"y":1.5, "theta":3.14},{"x":4.5, "y":0.5 , "theta":1.57}]
     },
     {
-      "source" :"entrance",
-      "goal"   :"living room",
-      "path":[{"x":1,"y":0, "theta":-1.57},{"x":2,"y":0, "theta":0},{"x":2,"y":7, "theta":3.14},{"x":1,"y":7, "theta":3.14}]
+      "source" :"living room",
+      "goal"   :"command pose",
+      "path":[{"x":1,"y":7, "theta":0},{"x":2,"y":7, "theta":0},{"x":2.5,"y":7, "theta":0},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":.5, "theta":0},{"x":4.5, "y":0.5 , "theta":1.57}]
     },
     {
-      "source" :"entrance",
-      "goal"   :"bed room",
-      "path":[{"x":1,"y":0, "theta":0},{"x":2,"y":0, "theta":0},{"x":2.5,"y":6, "theta":0},{"x":3.5,"y":6, "theta":0}]
+      "source" :"bed room",
+      "goal"   :"command pose",
+      "path":[{"x":3.5,"y":6, "theta":3.14},{"x":2.5,"y":6, "theta":3.14},{"x":2.5,"y":0.5, "theta":0},{"x":3.5,"y":0.5, "theta":0},{"x":4.5, "y":0.5 , "theta":1.57}]
+    }
+    {
+      "source" :"lobby",
+      "goal"   :"command pose",
+      "path":[{"x":4.5, "y":0.5 , "theta":1.57}]
     }
 ]
